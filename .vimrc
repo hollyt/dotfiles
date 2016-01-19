@@ -2,8 +2,10 @@ set number
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+set hlsearch
+nn <CR> :nohlsearch<CR>/<BS><CR>
 syntax on
-colorscheme desert
+colorscheme euphrasia
 
 " Nope.
 set nobackup
@@ -19,4 +21,8 @@ set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 set listchars=tab:▸\
 set listchars+=trail:·
 set listchars+=eol:↴
-set listchars+=nbsp:_ 
+set listchars+=nbsp:_
+
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=blue guibg=blue
+match ExtraWhitespace /\s\+$/
