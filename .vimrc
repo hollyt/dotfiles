@@ -1,6 +1,10 @@
 " Pathogen
 execute pathogen#infect()
 
+" Airline
+let g:airline_theme='bubblegum'
+
+" Look & feel
 set number
 set expandtab
 set softtabstop=4
@@ -8,7 +12,11 @@ set shiftwidth=4
 set hlsearch
 nn <CR> :nohlsearch<CR>/<BS><CR>
 syntax on
-colorscheme euphrasia
+
+set background=dark
+set t_Co=256
+colorscheme bubblegum
+"colorscheme euphrasia
 
 " Nope.
 set nobackup
