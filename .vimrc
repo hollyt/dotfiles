@@ -1,3 +1,6 @@
+" Pathogen
+execute pathogen#infect()
+
 set number
 set expandtab
 set softtabstop=4
@@ -26,3 +29,5 @@ set listchars+=nbsp:_
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=blue guibg=blue
 match ExtraWhitespace /\s\+$/
+
+" For Make tab stuff
